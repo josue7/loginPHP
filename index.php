@@ -30,7 +30,7 @@
             $datosUser = $user->verifyByUser();
             //Verificar si el array de datos del user no esta vacio
             if(!empty($datosUser)){
-                //mostrar los datos del user en pantalla (opcional)
+                //Se agrega los datos del usuario al objeto user
                 $user->setName($datosUser['name']);
                 $user->setLast_name($datosUser['last_name']);
                 $user->setEmail($datosUser['email']);
